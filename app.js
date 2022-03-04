@@ -3,6 +3,8 @@ const btn = document.getElementById("btn");
 const result = document.querySelector(".result");
 const secondresult = document.querySelector(".secondresult");
 const thirdresult = document.querySelector(".thirdresult");
+const dropdown = document.querySelectorAll('.question-btn');
+
 
 btn.addEventListener("click", function () {
   let total = "Answer: "; 
@@ -32,3 +34,11 @@ ntbtn.addEventListener("click", function () {
 function getRandomNumber() {
   return Math.floor(Math.random() * yesorno.length);
 }
+
+
+dropdown.forEach(function(btn){
+    btn.addEventListener('click', function(e){
+        const question = e.currentTarget.parentElement;
+        question.classList.toggle('show-hehe');
+    });
+});

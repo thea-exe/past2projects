@@ -24,3 +24,10 @@ h1 {
 .btn {
     color: hotpink;
   }
+  
+.text {
+    display: none;
+  }
+.show-hehe .text {
+    display: block;
+  }
